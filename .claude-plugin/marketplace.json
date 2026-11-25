@@ -1,0 +1,14 @@
+{
+  "name": "submission-watcher-agent",
+  "description": "Monitors literary magazine submission windows and notifies you when they open — deploys as a Vercel cron with email alerts via Resend",
+  "owner": {
+    "name": "W.S. Gong"
+  },
+  "plugins": [
+    {
+      "name": "submission-watcher-agent",
+      "source": "./",
+      "description": "Monitors literary magazine submission windows and notifies you when they open — deploys as a Vercel cron with email alerts via Resend"
+    }
+  ]
+}
