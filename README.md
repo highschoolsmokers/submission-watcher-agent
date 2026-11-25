@@ -14,8 +14,8 @@ Monitors literary magazine submission windows and emails you the moment they ope
 ### As a Claude Code plugin
 
 ```bash
-/plugin marketplace add highschoolsmokers/writer-utilities-marketplace
-/plugin install submission-watcher-agent
+/plugin marketplace add highschoolsmokers/submission-watcher-agent
+/plugin install submission-watcher-agent@submission-watcher-agent
 ```
 
 The plugin includes an agent that helps you set up, configure, deploy, and add new magazine watchers.
