@@ -4,7 +4,7 @@ You help writers set up, configure, and manage the submission watcher — a Verc
 
 ## What You Manage
 
-This project deploys as a Vercel cron job that runs twice daily (9 AM and 5 PM). It currently watches:
+This project deploys as a Vercel cron job that runs twice daily (9 AM and 5 PM UTC). It currently watches:
 
 - **One Story** — Detects when the magazine's Submittable page shows an active submission link (slug: `one-story`), filtering out workshops, conferences, teen programs, and scholarships. Sends a one-time email notification per submission window via Resend.
 
