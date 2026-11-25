@@ -7,7 +7,7 @@ Monitors literary magazine submission windows and emails you the moment they ope
 - **Watches submission pages** — Currently monitors One Story's Submittable page for magazine submission links (filtering out workshops, conferences, teen programs)
 - **Sends email alerts** — One notification per submission window via Resend, so you never miss an opening
 - **Tracks state** — Uses Upstash Redis to avoid duplicate notifications and expose status via API
-- **Runs on schedule** — Vercel cron checks twice daily (9 AM and 5 PM)
+- **Runs on schedule** — Vercel cron checks twice daily (9 AM and 5 PM UTC)
 
 ## Install
 
@@ -62,14 +62,14 @@ Checks the Submittable page and prints status without sending email or touching 
 
 ## Adding a New Watcher
 
-1. Create a directory (e.g., `tin-house-watcher/`)
+1. Create a directory (e.g., `example-magazine-watcher/`)
 2. Implement `export async function run()` returning `{ agent, open, checkedAt }`
 3. Register it in `api/cron.mjs`:
    ```js
-   import { run as tinHouseWatcher } from "../tin-house-watcher/index.mjs";
+   import { run as exampleMagazineWatcher } from "../example-magazine-watcher/index.mjs";
    const agents = [
      { name: "one-story-watcher", run: oneStoryWatcher },
-     { name: "tin-house-watcher", run: tinHouseWatcher },
+     { name: "example-magazine-watcher", run: exampleMagazineWatcher },
    ];
    ```
 4. Deploy
