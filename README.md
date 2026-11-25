@@ -78,3 +78,7 @@ Checks the Submittable page and prints status without sending email or touching 
 
 - **`GET /api/status`** — Returns last check result and notification state for all watchers
 - **`POST /api/cron`** — Triggered by Vercel cron; runs all watchers (requires `CRON_SECRET` auth)
+
+## License
+
+MIT. See [LICENSE](LICENSE).
